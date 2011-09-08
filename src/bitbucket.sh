@@ -5,7 +5,7 @@ echo "Baixar repositório (0) ou enviar alterações (1)? "; read resposta
 if [ $resposta -eq 1 ] ; then
         echo "Commit: "; read committext
         hg commit -m "$committext"
-        hg push https://paico@bitbucket.org/paico/fclin
+        hg push https://usuario@bitbucket.org/usuario/projeto
 else
-        hg clone https://paico@bitbucket.org/paico/fclin
+        hg clone https://usuario@bitbucket.org/usuario/projeto
 fi
